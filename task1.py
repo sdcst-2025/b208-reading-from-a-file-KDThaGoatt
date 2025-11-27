@@ -14,8 +14,8 @@ assert find('fish') == 5
 def find(needle):
     with open("task01.txt") as file:
         food = file.read()
+        food = food.split()
         index = food.index(needle)
-        print(needle, index)
         return index
         
     

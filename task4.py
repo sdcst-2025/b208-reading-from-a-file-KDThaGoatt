@@ -13,7 +13,11 @@ Create a function that reads the specific value for a specific level and an armo
 """
 
 def target(lvl,ac):
-    return
+    with open('task04.txt') as file:
+        chart = file.read().split('\n')
+        lev = chart[lvl-1].split()
+        roll = int(lev[10-ac])
+    return roll
 
 
 def tests():

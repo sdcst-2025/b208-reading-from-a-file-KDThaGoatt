@@ -30,7 +30,7 @@ with open('task5.csv') as file:
             print(stocklist[1], end='')
             match = True
             try:
-                print(f',{stocklist[2]}') #some company names have commas in them so splitting by the commas splits the company names in half, this is just trying to see if there is another index after where the company should be and prints that
+                print(f',{stocklist[2]}') #some company names have commas in them so splitting by the commas splits the company names in half, this is just trying to see if there is another index after where the company should be and prints that if there is
             except:
                 break
         elif query in symbol:
